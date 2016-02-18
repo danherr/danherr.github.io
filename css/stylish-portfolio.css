@@ -6,6 +6,10 @@
 
 /* Global Styles */
 
+li {
+    list-style: none;
+}
+
 html,
 body {
     width: 100%;
@@ -209,6 +213,121 @@ hr.small {
 .img-portfolio:hover {
     opacity: 0.8;
 }
+
+.single-image{
+	margin-right: 3px;
+	position: relative;
+	transition: all 1s;
+        margin: 10px 0;
+}
+.single-image img{
+    width: 100%;
+    height: auto;
+}
+.single-image:hover div.image-overlay{
+	opacity: 1;
+}
+
+.image-overlay{
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(65, 125, 180, 0.8);
+color: #fff;
+left: 0;
+top: 0;
+opacity: 0;
+transition: all 1s;
+}
+
+.image-overlay a{
+position: absolute;
+top: 20px;
+right: 20px;
+text-decoration: none;
+color: inherit;
+font-size: 25px;
+width: 40%;
+opacity: 2;
+
+border: 1px solid #fff;
+border-radius: 2px;
+}
+
+.image-overlay a.left{
+    left: 20px;
+    right: auto;
+
+}
+
+
+.image-overlay h2{
+position: absolute;
+bottom: 28px;
+left: 20px;
+font-size: 25px;
+letter-spacing: 3px;
+color: inherit;
+text-transform: uppercase;
+text-align: left;
+}
+
+.image-overlay h4{
+position: absolute;
+bottom: 11px;
+left: 20px;
+font-size: 14px;
+color: inherit;
+}
+.no-padding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.skill-header {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  vertical-align: middle;
+  width: 500px
+}
+
+.skills-list {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.skills-list > li {
+  float: left;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+}
+
+.skills-list > li > img {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.skills-list h3 {
+    text-align: center;
+}
+
 
 /* Call to Action */
 
